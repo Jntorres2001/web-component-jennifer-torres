@@ -1,0 +1,48 @@
+
+Nombre del estudiante: Jennifer Torres
+Curso: Desarrollo Web para la Integración de Tecnologías
+Docente: Paulo Galarza
+Año: 2025
+
+# Componente Web: `<quote-generator>`
+
+## Descripción
+
+El componente `<quote-generator>` es un Web Component personalizado que muestra frases motivacionales junto con el nombre del autor. Permite al usuario generar una nueva frase aleatoria al hacer clic en un botón. El componente está diseñado para ser reutilizable y personalizable mediante atributos HTML.
+
+Este componente fue desarrollado como parte de una actividad académica para poner en práctica conceptos avanzados de desarrollo con Web Components, tales como Shadow DOM, templates, atributos personalizados y estilos encapsulados.
+
+## Características técnicas
+
+- Uso de clase extendida de `HTMLElement`
+- Registro con `customElements.define`
+- Shadow DOM para encapsulamiento
+- Uso de `<template>` para estructura interna
+- Atributos personalizados (como `theme`)
+- Estilos encapsulados con `:host` y `::slotted`
+- Uso de `<slot>` para insertar contenido externo
+- Botón funcional para cambiar la frase aleatoria
+
+## Atributos personalizados
+
+| Atributo | Descripción                           | Valores posibles |
+|----------|----------------------------------------|------------------|
+| theme    | Cambia el tema visual del componente  | `light` (default), `dark` |
+
+## Código de ejemplo para reutilizar el componente
+
+<!-- Enlaza el archivo del componente -->
+<script type="module" src="./quote-generator.js"></script>
+
+<!-- Usa el componente -->
+<quote-generator theme="light">
+  <span slot="titulo">✨ Frase del Día ✨</span>
+</quote-generator>
+
+## Capturas de pantalla
+
+![Interfaz del componente Quote Generator en tema claro mostrando una frase motivacional y el nombre del autor, con un botón para generar una nueva frase. El entorno es una página web sencilla con colores claros y diseño minimalista. El tono es motivador y positivo.](./imagenes/image.png)
+
+
+
+
